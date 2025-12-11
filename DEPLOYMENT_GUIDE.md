@@ -1,4 +1,4 @@
-# Deployment Guide for Mariea Wellness Website
+# Deployment Guide for Wellness by Mariea Website
 
 ## Step 1: Configure Git (if not already done)
 ```powershell
@@ -59,5 +59,7 @@ If you prefer a different hosting service:
 2. Sign up/login
 3. Import your GitHub repository
 4. Deploy automatically
+
+
 
 
