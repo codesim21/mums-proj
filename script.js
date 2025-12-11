@@ -39,20 +39,26 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Smooth Scrolling for Navigation Links
+// Smooth Scrolling for Navigation Links (only for anchor links)
 navLinksArray.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
         const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
         
-        if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 80;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
+        // Only prevent default for anchor links (starting with #)
+        // Allow normal navigation for page links (index.html, beauty.html, etc.)
+        if (targetId && targetId.startsWith('#')) {
+            e.preventDefault();
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         }
+        // For page links (index.html, beauty.html, fitness.html, etc.), allow default navigation
     });
 });
 
@@ -294,14 +300,8 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Add parallax effect to hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
+// Parallax effect removed to prevent content from scrolling behind navbar
+// This ensures the hero content remains readable when scrolling
 
 // Initialize animations on page load
 window.addEventListener('load', () => {
@@ -321,6 +321,79 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.transition = 'opacity 0.5s ease';
         document.body.style.opacity = '1';
     }, 100);
+
+    // Initialize contact form if it exists
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleContactForm);
+    }
+
+    // Update active nav link based on current page
+    updateActiveNavLink();
+});
+
+// Handle contact form submission
+function handleContactForm(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    
+    // Here you would typically send the data to a server
+    // For now, we'll just show an alert
+    alert('Thank you for your message! We will get back to you soon.\n\nNote: Form submission functionality will be configured with your email service.');
+    
+    // Reset form
+    e.target.reset();
+}
+
+// Update active navigation link based on current page
+function updateActiveNavLink() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const href = link.getAttribute('href');
+        
+        if (currentPage === 'index.html' || currentPage === '') {
+            if (href === 'index.html' || href === '#home') {
+                link.classList.add('active');
+            }
+        } else if (href.includes(currentPage)) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Smooth scrolling for same-page anchors
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        // Only handle if it's not an external link to another page
+        if (href !== '#' && !href.includes('://')) {
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                const offsetTop = target.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+
+// Service booking buttons (placeholder functionality)
+document.querySelectorAll('.service-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        // In a real implementation, this would open a booking system
+        // For now, we'll redirect to contact page
+        const confirmBooking = confirm('Redirect to contact page to book this service?');
+        if (confirmBooking) {
+            window.location.href = 'index.html#contact';
+        }
+    });
 });
 
 

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Movement - Workout Programs & Videos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Mariea Wellness</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="health.html" class="nav-link">Health</a></li>
+                <li><a href="beauty.html" class="nav-link">Beauty</a></li>
+                <li><a href="fitness.html" class="nav-link active">Fitness</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fitness Hero Section -->
+    <section class="fitness-hero hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Fitness & Movement</h1>
+            <p class="hero-subtitle">Transform your body, energize your spirit, and build strength from within</p>
+            <div class="hero-buttons">
+                <a href="#workouts" class="btn btn-primary">Watch Workouts</a>
+                <a href="#programs" class="btn btn-secondary">View Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitness Categories Section -->
+    <section id="workouts" class="section fitness-section">
+        <div class="container">
+            <h2 class="section-title">Fitness & Movement</h2>
+            <p class="section-subtitle">Move your body, energize your spirit</p>
+            <div class="fitness-grid">
+                <div class="fitness-card" data-aos="fade-up">
+                    <div class="card-icon">💪</div>
+                    <h3>Strength Training</h3>
+                    <p>Build natural strength with bodyweight exercises and functional movements</p>
+                </div>
+                <div class="fitness-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">🧘</div>
+                    <h3>Yoga & Mindfulness</h3>
+                    <p>Connect mind and body through ancient practices and meditation</p>
+                </div>
+                <div class="fitness-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">🏃</div>
+                    <h3>Cardio Wellness</h3>
+                    <p>Boost your cardiovascular health with enjoyable activities</p>
+                </div>
+                <div class="fitness-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">🌊</div>
+                    <h3>Outdoor Adventures</h3>
+                    <p>Experience nature's gym with hiking, swimming, and outdoor activities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Videos Section -->
+    <section id="youtube-videos" class="section videos-section">
+        <div class="container">
+            <h2 class="section-title">Workout Videos</h2>
+            <p class="section-subtitle">Free and premium fitness content on YouTube</p>
+            
+            <!-- Free Videos Section -->
+            <div class="video-category">
+                <h3 class="category-title">
+                    <i class="fas fa-unlock"></i> Free Workout Videos
+                </h3>
+                <p class="category-description">Get started with these free workout routines</p>
+                <div class="videos-grid">
+                    <!-- Placeholder for free YouTube videos -->
+                    <div class="video-card free">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <i class="fab fa-youtube"></i>
+                                <p>Video Thumbnail</p>
+                            </div>
+                            <div class="video-badge free-badge">FREE</div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Beginner Strength Training</h4>
+                            <p class="video-description">Perfect introduction to strength training with bodyweight exercises</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 30 mins</span>
+                                <span class="video-level"><i class="fas fa-signal"></i> Beginner</span>
+                            </div>
+                            <a href="#" class="video-link" id="youtube-link-free-1" target="_blank">
+                                <i class="fab fa-youtube"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-card free">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <i class="fab fa-youtube"></i>
+                                <p>Video Thumbnail</p>
+                            </div>
+                            <div class="video-badge free-badge">FREE</div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Morning Yoga Flow</h4>
+                            <p class="video-description">Start your day with this energizing yoga sequence</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 20 mins</span>
+                                <span class="video-level"><i class="fas fa-signal"></i> All Levels</span>
+                            </div>
+                            <a href="#" class="video-link" id="youtube-link-free-2" target="_blank">
+                                <i class="fab fa-youtube"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-card free">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <i class="fab fa-youtube"></i>
+                                <p>Video Thumbnail</p>
+                            </div>
+                            <div class="video-badge free-badge">FREE</div>
+                        </div>
+                        <div class="video-info">
+                            <h4>HIIT Cardio Workout</h4>
+                            <p class="video-description">High-intensity interval training to boost your metabolism</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 25 mins</span>
+                                <span class="video-level"><i class="fas fa-signal"></i> Intermediate</span>
+                            </div>
+                            <a href="#" class="video-link" id="youtube-link-free-3" target="_blank">
+                                <i class="fab fa-youtube"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Videos Section -->
+            <div class="video-category">
+                <h3 class="category-title">
+                    <i class="fas fa-lock"></i> Premium Workout Classes
+                </h3>
+                <p class="category-description">Unlock exclusive content and personalized programs</p>
+                <div class="videos-grid">
+                    <!-- Placeholder for premium/paid YouTube videos -->
+                    <div class="video-card premium">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <i class="fab fa-youtube"></i>
+                                <p>Video Thumbnail</p>
+                            </div>
+                            <div class="video-badge premium-badge">PREMIUM</div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Complete Strength Program</h4>
+                            <p class="video-description">12-week comprehensive strength training program with weekly progressions</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 12 Weeks</span>
+                                <span class="video-level"><i class="fas fa-signal"></i> All Levels</span>
+                            </div>
+                            <div class="premium-price">£29.99</div>
+                            <a href="#" class="video-link premium-link" id="youtube-link-premium-1" target="_blank">
+                                <i class="fab fa-youtube"></i> Purchase & Watch
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-card premium">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <i class="fab fa-youtube"></i>
+                                <p>Video Thumbnail</p>
+                            </div>
+                            <div class="video-badge premium-badge">PREMIUM</div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Advanced Yoga Masterclass</h4>
+                            <p class="video-description">Deep dive into advanced poses, sequences, and meditation techniques</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 8 Weeks</span>
+                                <span class="video-level"><i class="fas fa-signal"></i> Advanced</span>
+                            </div>
+                            <div class="premium-price">£19.99</div>
+                            <a href="#" class="video-link premium-link" id="youtube-link-premium-2" target="_blank">
+                                <i class="fab fa-youtube"></i> Purchase & Watch
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-card premium">
+                        <div class="video-thumbnail">
+                            <div class="video-placeholder">
+                                <i class="fab fa-youtube"></i>
+                                <p>Video Thumbnail</p>
+                            </div>
+                            <div class="video-badge premium-badge">PREMIUM</div>
+                        </div>
+                        <div class="video-info">
+                            <h4>30-Day Transformation Challenge</h4>
+                            <p class="video-description">Complete 30-day program with daily workouts, meal plans, and support</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 30 Days</span>
+                                <span class="video-level"><i class="fas fa-signal"></i> All Levels</span>
+                            </div>
+                            <div class="premium-price">£39.99</div>
+                            <a href="#" class="video-link premium-link" id="youtube-link-premium-3" target="_blank">
+                                <i class="fab fa-youtube"></i> Purchase & Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Channel Link -->
+            <div class="youtube-channel-cta">
+                <div class="channel-info">
+                    <i class="fab fa-youtube channel-icon"></i>
+                    <h3>Subscribe to Our YouTube Channel</h3>
+                    <p>Get access to all our free workout videos, fitness tips, and exclusive content</p>
+                    <a href="#" class="btn btn-primary" id="youtube-channel-link" target="_blank">
+                        <i class="fab fa-youtube"></i> Visit YouTube Channel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitness Programs Section -->
+    <section id="programs" class="section programs-section">
+        <div class="container">
+            <h2 class="section-title">Fitness Programs</h2>
+            <p class="section-subtitle">Structured programs designed for your fitness goals</p>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">💪</div>
+                    <h3>Strength Building</h3>
+                    <p>Progressive strength training program to build muscle and increase power</p>
+                    <ul class="program-features">
+                        <li>✓ Progressive overload system</li>
+                        <li>✓ Form technique videos</li>
+                        <li>✓ Weekly workout plans</li>
+                        <li>✓ Nutrition guidance</li>
+                    </ul>
+                    <div class="program-price">Starting at £19.99/month</div>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">🧘</div>
+                    <h3>Yoga & Flexibility</h3>
+                    <p>Comprehensive yoga program for flexibility, strength, and mindfulness</p>
+                    <ul class="program-features">
+                        <li>✓ Daily practice videos</li>
+                        <li>✓ Meditation sessions</li>
+                        <li>✓ Pose tutorials</li>
+                        <li>✓ Breathing exercises</li>
+                    </ul>
+                    <div class="program-price">Starting at £14.99/month</div>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">🏃</div>
+                    <h3>Cardio & Endurance</h3>
+                    <p>Boost cardiovascular health and build endurance with varied workouts</p>
+                    <ul class="program-features">
+                        <li>✓ HIIT workouts</li>
+                        <li>✓ Running programs</li>
+                        <li>✓ Interval training</li>
+                        <li>✓ Progress tracking</li>
+                    </ul>
+                    <div class="program-price">Starting at £19.99/month</div>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">⚖️</div>
+                    <h3>Weight Loss</h3>
+                    <p>Holistic approach combining fitness, nutrition, and wellness</p>
+                    <ul class="program-features">
+                        <li>✓ Workout routines</li>
+                        <li>✓ Meal planning</li>
+                        <li>✓ Progress tracking</li>
+                        <li>✓ Support community</li>
+                    </ul>
+                    <div class="program-price">Starting at £24.99/month</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="section integration-section">
+        <div class="container">
+            <h2 class="section-title">Complete Your Wellness Journey</h2>
+            <p class="section-subtitle">Fitness works best when combined with health and beauty</p>
+            <div class="integration-cards">
+                <div class="integration-card">
+                    <div class="integration-icon">🌿</div>
+                    <h3>Health</h3>
+                    <p>Support your fitness goals with natural supplements and healing recipes</p>
+                    <a href="health.html" class="integration-link">Explore Health →</a>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">✨</div>
+                    <h3>Beauty</h3>
+                    <p>Feel confident and beautiful as you achieve your fitness goals</p>
+                    <a href="beauty.html" class="integration-link">Discover Beauty →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="section social-section">
+        <div class="container">
+            <h2 class="section-title">Follow Our Fitness Journey</h2>
+            <p class="section-subtitle">Connect with us on social media for daily inspiration and updates</p>
+            <div class="social-links-fitness">
+                <a href="#" class="social-card" id="instagram-fitness-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Daily workout tips, motivation, and behind-the-scenes content</p>
+                    <span class="social-cta">Follow Us →</span>
+                </a>
+                <a href="#" class="social-card" id="youtube-fitness-link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Free and premium workout videos, tutorials, and fitness programs</p>
+                    <span class="social-cta">Subscribe →</span>
+                </a>
+            </div>
+            <p class="social-note">* Social media links will be added soon</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>💪 Fitness & Movement</h3>
+                    <p>Transform your body and energize your spirit</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="beauty.html">Beauty</a></li>
+                        <li><a href="fitness.html">Fitness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Fitness Programs</h4>
+                    <ul>
+                        <li><a href="#workouts">Workout Videos</a></li>
+                        <li><a href="#programs">Fitness Programs</a></li>
+                        <li><a href="#youtube-videos">YouTube Channel</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p>Follow us for fitness inspiration</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" id="footer-instagram-fitness" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" id="footer-youtube-fitness" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mariea Wellness. Made with 💪 for your fitness journey.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
